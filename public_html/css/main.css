@@ -1,0 +1,320 @@
+
+/* BASIC */
+
+html {
+    background-color: #56baed;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-color: #352f4d;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #92badd;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+input[type=text]#origin_url {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    /*margin: 5px;*/
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.fadeIn {
+/*.origin_url {*/
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    margin: 10rem auto 0;
+}
+
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+
+    width: max-content;
+    margin: 50px auto 0;
+    cursor: pointer;
+
+}
+
+.messages{
+    height: auto;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+#tocopy{
+    margin-left: 10px;
+    width: min-content;
+    padding: 0;
+    height: 41px;
+}
+
+.errors{
+    /*display: none;*/
+    background-color: #f7b7b7;
+    width: max-content;
+    height: min-content;
+    color: #2a2aa6;
+    padding: 9px;
+    border-radius: 6px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+#success{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: max-content;
+    margin: 30px auto 0;
+}
+
+input[type=text].success_input {
+    background-color: #a3f7a3;
+    border: none;
+    color: #0d0d0d;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    /*margin: 5px;*/
+    width: 100%;
+    max-width: 600px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*.success_bth{*/
+    /*text-transform: uppercase;*/
+    /*background-color: #a3f7a3;*/
+/*}*/
+
+.success_bth {
+    margin-left: 10px;
+    display: inline-block;
+    width: max-content;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: border-color 0.3s ease-out,
+    color 0.3s ease-out;
+    border-radius: 5px 5px 5px 5px;
+}
+.success_bth:hover,
+.success_bth:active {
+    color: #56baed;
+    border-color: #56baed;
+    -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+input[type=text]:focus {
+    background-color: #a3f7a3;
+}
+
+input[type=text]:placeholder {
+    color: #cccccc;
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    width: max-content;
+    margin: 0 auto;
+    /*position: relative;*/
+    /*top: 100px;*/
+}
+
+
+
+
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+
+
+.text-danger{
+    display: block;
+}
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Simple CSS3 Fade-in Animation */
+
+
+
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: all 0.3s ease-in-out;
+}
+
+.underlineHover:hover {
+    color: #2567a2;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.underlineHover:hover:after{
+    width: 100%;
+}
