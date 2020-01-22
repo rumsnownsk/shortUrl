@@ -25,12 +25,6 @@ $dispatcher = FastRoute\simpleDispatcher(function (RouteCollector $r) {
     $r->addRoute('GET', '/{link}', ['app\controllers\MainController', 'getOrigLinkAction']);
 
     $r->addRoute('POST', '/shortlink', ['app\controllers\MainController', 'shortLinkAjaxAction']);
-//    $r->addRoute('POST', '/auth', ['app\controllers\AuthController', 'authAjaxAction']);
-//    $r->addRoute('GET', '/logout', ['app\controllers\AuthController', 'logoutAction']);
-
-//    $r->addRoute('GET', '/onetask', ['app\controllers\AjaxController', 'oneTaskAction']);
-//    $r->addRoute('POST', '/formIssue', ['app\controllers\AjaxController', 'formIssueAction']);
-//    $r->addRoute('POST', '/deleteIssue', ['app\controllers\AjaxController', 'deleteIssueAction']);
 
 });
 

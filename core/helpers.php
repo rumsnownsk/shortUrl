@@ -1,13 +1,5 @@
 <?php
 
-
-
-function getPagination(\JasonGrimes\Paginator $paginator)
-{
-    include ROOT . '/vendor/jasongrimes/paginator/examples/pager.phtml';
-
-}
-
 function redirect($http = false)
 {
     if ($http) {

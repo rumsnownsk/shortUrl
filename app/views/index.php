@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!--    <link rel="stylesheet" href="/css/bootstrap.min.css">-->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
@@ -30,10 +30,8 @@
 
                 <input type="submit" class="fadeIn second" value="Укоротить ссылку">
             </form>
-            <div id="success">
-<!--                <button type='button' id='to_copy' class="hidden">Copy</button>-->
-            </div>
-            <!--                <span id="error_message"></span>-->
+
+            <div id="success"></div>
 
         </div>
     </div>
