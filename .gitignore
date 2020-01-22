@@ -1,4 +1,4 @@
 .git
 .idea
 vendor
-core/db.php
+temp/errors.log
