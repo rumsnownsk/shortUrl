@@ -7,7 +7,7 @@ $m = new Manager;
 $m->addConnection([
     'driver' => 'mysql',
     'host' => 'localhost',
-    'database' => 'short-url',
+    'database' => 'short-url-test',
     'username' => 'root',
     'password' => 'root',
     'charset' => 'utf8',
