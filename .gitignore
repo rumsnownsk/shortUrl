@@ -2,4 +2,3 @@
 .idea
 vendor
 temp/errors.log
-core/db.php
