@@ -16,22 +16,16 @@ class Urls extends Model
         'origin_url',
         'short_url',
         'ip_client',
-        'user_agent'
+        'user_agent',
+        'created_at'
     ];
-
-    public static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($model) {
-            $model->created_at = $model->freshTimestamp();
-        });
-    }
 
     public function add($fields){
         $fields['short_url'] = $this->randomString();
         $fields['ip_client'] = $_SERVER['REMOTE_ADDR'];
         $fields['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
+        $fields['created_at'] = time();
+
         $model = new static;
         $model->fill($fields);
         $model->save();

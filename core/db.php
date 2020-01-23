@@ -8,8 +8,8 @@ $m->addConnection([
     'driver' => 'mysql',
     'host' => 'localhost',
     'database' => 'short-url',
-    'username' => 'root',
-    'password' => 'root',
+    'username' => '',
+    'password' => '',
     'charset' => 'utf8',
     'collation' => 'utf8_general_ci',
     'prefix' => ''
