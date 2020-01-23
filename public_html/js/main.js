@@ -41,7 +41,7 @@ $(function () {
                     activationCopy()
 
                 } else if(r.code == 500){
-                    $("<p class='errors'>что-то сломалось на сервере</p>").prependTo($(".messages"));
+                    $("<p class='errors'>что-то сломалось на сервере<br>(может ответ в консоли?)</p>").prependTo($(".messages"));
 
                 }
             }

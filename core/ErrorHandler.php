@@ -62,12 +62,16 @@ class ErrorHandler
 
             $this->logErrors($e->getMessage(), $e->getFile());
 
-            $this->myDisplayError(
-                $e->getCode() . '.  Error type - PDOException!',
-                $e->getMessage(),
-                $e->getFile(),
-                "Похоже ошибка подключения к Базе Данных. Проверьте настройки в файле /core/db.php"
-            );
+//            $this->myDisplayError(
+//                $e->getCode() . '.  Error type - PDOException!',
+//                $e->getMessage(),
+//                $e->getFile(),
+//                "Похоже ошибка подключения к Базе Данных. Проверьте настройки в файле /core/db.php"
+//            );
+            echo json_encode([
+                'code' => 500,
+                'message' => "Похоже ошибка подключения к Базе Данных. Проверьте настройки в файле /core/db.php"
+            ], JSON_UNESCAPED_UNICODE);die;
         };
 
 

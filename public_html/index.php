@@ -4,6 +4,7 @@ define("ROOT", dirname(__DIR__));
 define("APP", dirname(__DIR__).'/app');
 define("VIEWS", dirname(__DIR__).'/app/views');
 define("DEBUG",true);
+//define("DEBUG",false);
 
 require ROOT.'/core/ErrorHandler.php';
 require ROOT.'/vendor/autoload.php';
